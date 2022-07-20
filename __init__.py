@@ -1,1 +1,0 @@
-from schafkopfrl.schafkopf_env import SchafkopfEnv

@@ -2,11 +2,10 @@ import logging
 from os import path
 
 import torch
-
 from torch.utils.tensorboard import SummaryWriter
-from dataset import ExperienceDatasetLinear, ExperienceDatasetLSTM
-from models.actor_critic_lstm import ActorCriticNetworkLSTM
-from models.actor_critic_sep import ActorCriticNetworkLSTMSep
+
+from .models.actor_critic_sep import ActorCriticNetworkLSTMSep
+from schafkopfrl.dataset import ExperienceDatasetLSTM
 
 
 class Settings:

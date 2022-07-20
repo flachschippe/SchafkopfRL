@@ -1,5 +1,5 @@
-from players.player import Player
-from rules import Rules
+from schafkopfrl.players.player import Player
+from schafkopfrl.rules import Rules
 import random
 
 

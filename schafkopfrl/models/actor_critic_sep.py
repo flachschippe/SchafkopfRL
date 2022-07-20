@@ -5,8 +5,8 @@ import torch.nn.functional as F
 from torch.autograd import Variable
 from torch.distributions import Categorical
 
-from rules import Rules
-from utils import two_hot_encode_game, two_hot_encode_card, one_hot_cards, one_hot_games
+from schafkopfrl.rules import Rules
+from schafkopfrl.utils import two_hot_encode_game, two_hot_encode_card, one_hot_cards, one_hot_games
 
 
 '''
@@ -40,7 +40,7 @@ class ActorCriticNetworkLSTMSep(nn.Module):
         self.fc2_critic = nn.Linear(self.hidden_neurons * 2, self.hidden_neurons)
         self.fc3_critic = nn.Linear(self.hidden_neurons, 1)
 
-        from settings import Settings
+        from schafkopfrl.settings import Settings
         self.device = Settings.device
 
 

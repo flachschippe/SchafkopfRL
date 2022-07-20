@@ -1,4 +1,4 @@
-from settings import Settings
+from schafkopfrl.settings import Settings
 import numpy as np
 
 class GameStatistics:

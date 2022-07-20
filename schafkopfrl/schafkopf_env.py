@@ -1,7 +1,7 @@
 import random
 
-from public_gamestate import PublicGameState
-from rules import Rules
+from schafkopfrl.public_gamestate import PublicGameState
+from schafkopfrl.rules import Rules
 import numpy as np
 
 class SchafkopfEnv:

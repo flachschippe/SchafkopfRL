@@ -3,20 +3,17 @@ from os import listdir
 
 import numpy as np
 import torch
+from schafkopfrl.settings import Settings
+from tensorboard import program
 
-from game_statistics import GameStatistics
-from memory import Memory
-from models.actor_critic_linear import ActorCriticNetworkLinear
-from schafkopf_env import SchafkopfEnv
+from schafkopfrl.game_statistics import GameStatistics
+from schafkopfrl.memory import Memory
 from schafkopfrl.players.random_coward_player import RandomCowardPlayer
 from schafkopfrl.players.random_player import RandomPlayer
 from schafkopfrl.players.rl_player import RlPlayer
 from schafkopfrl.players.rule_based_player import RuleBasedPlayer
 from schafkopfrl.ppo import PPO
-
-from tensorboard import program
-
-from settings import Settings
+from schafkopfrl.schafkopf_env import SchafkopfEnv
 
 
 def main():

@@ -1,4 +1,4 @@
-from players.player import Player
+from schafkopfrl.players.player import Player
 
 import random
 

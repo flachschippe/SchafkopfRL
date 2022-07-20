@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from rules import Rules
+from schafkopfrl.rules import Rules
 
 
 class Player(ABC):
